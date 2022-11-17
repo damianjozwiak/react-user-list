@@ -9,7 +9,7 @@ import {
     ListItemText,
     TextField,
     Toolbar,
-    Typography,
+    Typography
 } from '@mui/material';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -112,7 +112,12 @@ const App = () => {
                     color: '#ffffff',
                 }}
             >
-                <Typography variant="h5">User List</Typography>
+                <Typography
+                    variant="h5"
+                    sx={{ marginLeft: 'auto', marginRight: 'auto' }}
+                >
+                    User List
+                </Typography>
             </Toolbar>
             <Card sx={{ textAlign: 'center' }}>
                 <TextField
